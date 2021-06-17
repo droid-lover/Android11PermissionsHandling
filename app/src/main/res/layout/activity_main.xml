@@ -25,5 +25,6 @@
         app:layout_constraintTop_toBottomOf="@id/btnCamera"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

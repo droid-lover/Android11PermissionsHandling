@@ -65,7 +65,9 @@ class MainActivity : AppCompatActivity() {
                         setCameraDenied()
                         showPermissionDeniedDialog(Manifest.permission.CAMERA, REQUEST_CODE_CAMERA)
                     } else {
-                        showMandatoryPermissionsNeedDialog()
+                        if (!ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA) && (AppPreferences.cameraPermissionDeniedOnce)) {
+                            showMandatoryPermissionsNeedDialog()
+                        }
                     }
                 }
             }
