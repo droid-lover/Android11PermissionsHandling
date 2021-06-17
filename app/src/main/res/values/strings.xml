@@ -11,4 +11,5 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="permission_camera_access_required">Camera access is required for sending image attachments, please enable it</string>
     <string name="mandatory_permission_access_required">Camera access is required for sending image attachments, please enable it in settings</string>
+    <string name="permission_granted">Permission Granted</string>
 </resources>

@@ -1,5 +1,9 @@
 package com.vs.android11permissionshandling
 
+/**
+ * Created by Sachin
+ * https://medium.com/@iAmSachinRajput
+ */
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -11,6 +15,7 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
@@ -21,16 +26,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(findViewById(R.id.toolbar))
 
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { _ ->
+        findViewById<Button>(R.id.btnCamera).setOnClickListener { _ ->
             cameraAction()
         }
     }
 
     private fun cameraAction() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-            findViewById<TextView>(R.id.tvStatus).text = "Permission Granted"
+            findViewById<TextView>(R.id.tvStatus).text = getString(R.string.permission_granted)
 
         } else {
             requestCameraPermission()
@@ -50,25 +54,18 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    override fun onRequestPermissionsResult(
-            requestCode: Int,
-            permissions: Array<out String>,
-            grantResults: IntArray
-    ) {
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-
         when (requestCode) {
-
             REQUEST_CODE_CAMERA -> {
                 if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    findViewById<TextView>(R.id.tvStatus).text = "Permission Granted"
+                    findViewById<TextView>(R.id.tvStatus).text = getString(R.string.permission_granted)
                 } else {
-
                     if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
                         setCameraDenied()
                         showPermissionDeniedDialog(Manifest.permission.CAMERA, REQUEST_CODE_CAMERA)
                     } else {
-                            showMandatoryPermissionsNeedDialog()
+                        showMandatoryPermissionsNeedDialog()
                     }
                 }
             }
