@@ -15,3 +15,17 @@ I wrote a blog on it where you check more about this problem and its workaround 
 
 <a href="https://medium.com/native-mobile-bits/handling-permissions-in-android-11-fa79602a4724">Check blog here. :) </a> 
 
+
+also While requesting permissions there is slight difference please note that as well, than only you will get callback in ```onRequestPermissionsResult``` method.
+
+
+in activity
+
+```ActivityCompat.shouldShowRequestPermissionRationale(requireActivity(), Manifest.permission.READ_EXTERNAL_STORAGE)```
+
+
+and in fragment
+
+```requestPermissions(arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), READ_STORAGE_PERM)```
+
+If we follow this way of requesting permissions based on Activity/Fragment it will surely give us the callback. #verified.
