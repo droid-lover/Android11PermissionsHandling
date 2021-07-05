@@ -13,7 +13,7 @@ and when we dismiss we get callback like user selected never ask again :grin:
 I wrote a blog on it where you check more about this problem and its workaround solution.
 
 
-<a href="https://medium.com/native-mobile-bits/handling-permissions-in-android-11-fa79602a4724">Check blog here. How to fix it :) </a> 
+<a href="https://medium.com/native-mobile-bits/handling-permissions-in-android-11-fa79602a4724">Check blog here with Solution :) </a> 
 
 
 also While requesting permissions there is slight difference please note that as well, than only you will get callback in ```onRequestPermissionsResult``` method.
