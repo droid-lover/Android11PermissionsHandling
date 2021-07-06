@@ -19,12 +19,12 @@ I wrote a blog on it where you check more about this problem and its workaround 
 also While requesting permissions there is slight difference please note that as well, than only you will get callback in ```onRequestPermissionsResult``` method.
 
 
-in activity
+in activity -
 
 ```ActivityCompat.shouldShowRequestPermissionRationale(requireActivity(), Manifest.permission.READ_EXTERNAL_STORAGE)```
 
 
-and in fragment
+and in fragment -
 
 ```requestPermissions(arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), READ_STORAGE_PERM)```
 
