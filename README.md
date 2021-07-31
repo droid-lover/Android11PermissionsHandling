@@ -1,7 +1,7 @@
 # Android11PermissionsHandling
 
 
-This codebase is realted to one weird flow in Android 11 permissions handling. 
+This codebase is related to one weird flow in Android 11 permissions handling. 
 
 In android 11 this is the weird flow-  permissions popups are dismissible, 
 and when we dismiss we get callback like user selected never ask again :grin:
