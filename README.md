@@ -10,7 +10,8 @@ and when we dismiss we get callback like user selected never ask again :grin:
 
 
 
-I wrote a blog on it with solution, where you check more about this problem and its workaround solution.
+I also wrote a blog on it with solution, where you check more about this problem and its workaround solution.
+
 
 
 <a href="https://medium.com/native-mobile-bits/handling-permissions-in-android-11-fa79602a4724">Check blog here with Solution :) </a> 
