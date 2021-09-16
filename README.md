@@ -9,7 +9,6 @@ and when we dismiss we get callback like user selected never ask again :grin:
 <img src="https://media.giphy.com/media/TXFbYzcwXS0AzBICbG/giphy.gif">
 
 
-
 I also wrote a blog on it with solution, where you check more about this problem and its workaround solution.
 
 
