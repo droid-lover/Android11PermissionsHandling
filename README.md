@@ -19,7 +19,7 @@ I also wrote a blog on it with solution, where you check more about this problem
 also While requesting permissions there is slight difference please note that as well, than only you will get callback in ```onRequestPermissionsResult``` method.
 
 
-in activity -
+in activity - 
 
 ```ActivityCompat.shouldShowRequestPermissionRationale(requireActivity(), Manifest.permission.READ_EXTERNAL_STORAGE)```
 
