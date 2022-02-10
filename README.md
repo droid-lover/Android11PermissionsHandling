@@ -29,3 +29,9 @@ and in fragment -
 ```requestPermissions(arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), READ_STORAGE_PERM)```
 
 If we follow this way of requesting permissions based on Activity/Fragment it will surely give us the callback. #verified.
+Lets connect over here :) 
+  
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/sachin-rajput-998b48105/)
+[![Website Badge](https://img.shields.io/badge/Medium-3b5998?style=flat-square&logo=google-chrome&logoColor=white)](https://droid-lover.medium.com/)
+[![Stackoverflow Badge](https://img.shields.io/badge/-Stackoverflow-FFA500?style=flat-square&logo=Stackoverflow&logoColor=orange)](https://stackoverflow.com/users/7193506/sachin)
+[![Youtube Badge](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCTjQSpx2waqXTC37AgM8qyA)
